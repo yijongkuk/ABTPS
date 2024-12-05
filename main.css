@@ -1,0 +1,44 @@
+/* Reset 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto; /* 스크롤 활성화 */
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 400vh; /* 스크롤 범위를 길게 설정 */
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/background.jpg') no-repeat center center/cover;
+    z-index: 1;
+  }
+  
+  .main-image {
+    position: fixed; /* 메인 이미지 고정 */
+    top: 50%; /* 화면 중앙 */
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: url('img/main.jpg') no-repeat center center/cover;
+    transform-origin: 50% 50%; /* 중심 축 */
+    transform: translate(-50%, -50%) scale(1) rotate(0deg); /* 초기 상태 */
+    z-index: 2;
+  }
+  
